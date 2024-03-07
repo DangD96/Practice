@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DJD Suite">
+    <test name="DJD Test 1">
+        <classes>
+            <class name="UdemyPractice.TestNG.Test.Class1Test">
+                <methods>
+                    <exclude name="Test2"/>
+                </methods>
+            </class>
+            <class name="UdemyPractice.TestNG.Test.Class2Test"/>
+        </classes>
+    </test>
+</suite>
