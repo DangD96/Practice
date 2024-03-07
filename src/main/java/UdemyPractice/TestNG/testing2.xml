@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="DJD Suite">
+<suite name="DJD Suite 2">
     <test name="DJD Test 1">
-        <classes>
-            <class name="UdemyPractice.TestNG.Test.Class1Test">
-                <methods>
-                    <exclude name="Test2"/>
-                </methods>
-            </class>
-            <class name="UdemyPractice.TestNG.Test.Class2Test"/>
-        </classes>
+        <packages>
+            <package name="UdemyPractice.TestNG.Test"/> <!-- Run everything in this package -->
+        </packages>
     </test>
 </suite>

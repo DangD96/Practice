@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="DJD Suite 2">
+<suite name="DJD Suite 3">
+    <!-- Multiple tests in suite -->
     <test name="DJD Test 1">
-        <packages>
-            <package name="UdemyPractice.TestNG.Test"/> <!-- Run everything in this package -->
-        </packages>
+        <groups>
+            <run>
+                <include name="djd"/> <!-- Only from these groups -->
+            </run>
+        </groups>
+        <classes>
+            <class name="UdemyPractice.TestNG.Test.Class1Test"/>
+        </classes>
+    </test>
+    <test name="DJD Test 2">
+        <classes>
+            <class name="UdemyPractice.TestNG.Test.Class2Test"/>
+        </classes>
     </test>
 </suite>
