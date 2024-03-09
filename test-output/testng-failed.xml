@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Practice(failed)">
+    <classes>
+      <class name="UdemyPractice.TestNG.Test.Class1Test">
+        <methods>
+          <include name="Teardown"/>
+          <include name="AfterSuite"/>
+          <include name="DJDTest1"/>
+          <include name="Setup"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterMethod"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- UdemyPractice.TestNG.Test.Class1Test -->
+    </classes>
+  </test> <!-- Practice(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

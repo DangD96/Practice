@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class Class2Test {
     @Test
     public static void Test1() {
-        System.out.println("apples");
+        System.out.println("alpha");
     }
 
     @Test(dataProvider = "getData") // For every row in the data object array, this test will run once

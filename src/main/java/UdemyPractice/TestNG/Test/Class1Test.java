@@ -1,5 +1,6 @@
 package UdemyPractice.TestNG.Test;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class Class1Test {
@@ -16,6 +17,7 @@ public class Class1Test {
     @Test
     public static void Test1() {
         System.out.println("I am test method test1");
+        Assert.assertTrue(true);
     }
 
     @AfterMethod

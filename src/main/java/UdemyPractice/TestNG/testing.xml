@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="DJD Suite">
-    <test name="DJD Test 1">
+<suite name="DJD Suite" parallel="tests" thread-count="2">
+    <test name="DJD Test 1" parallel="classes" thread-count="2">
         <classes>
             <class name="UdemyPractice.TestNG.Test.Class1Test">
                 <methods>
                     <!-- Testing with excluding specific methods -->
                     <exclude name="Test2"/>
-                    <exclude name="DJD.*"></exclude>
+                    <exclude name="DJD.*"/>
                 </methods>
             </class>
             <class name="UdemyPractice.TestNG.Test.Class2Test"/>
+        </classes>
+    </test>
+    <test name="DJD Test 2">
+        <classes>
+            <class name="UdemyPractice.TestNG.Test.Class3Test"/>
         </classes>
     </test>
 </suite>
