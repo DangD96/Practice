@@ -2,7 +2,7 @@ package UdemyPractice.TestNG.Test;
 
 import org.testng.annotations.Test;
 
-public class Test1 extends BaseTest {
+public class AlphaTest extends BaseTest {
     @Test
     public void myTest(){
         System.out.println("I am the child class");
