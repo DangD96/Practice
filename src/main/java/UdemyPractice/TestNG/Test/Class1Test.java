@@ -1,5 +1,6 @@
 package UdemyPractice.TestNG.Test;
 
+import jdk.jfr.Enabled;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -28,7 +29,7 @@ public class Class1Test {
 
     // Can set up parameters in xml file or in intellij config
     @Parameters({"message"})
-    @Test(groups = {"djd"})
+    @Test(groups = {"djd"}, enabled = true)
     public static void DJDTest1(String shout) {
         System.out.println("I am test method djdtest1");
         System.out.println(shout);
