@@ -6,10 +6,10 @@ import org.testng.annotations.Test;
 public class Class2Test {
     @Test
     public static void Test1() {
-        System.out.println("alpha");
+        System.out.println("I will execute first in this class because Test2 depends on me");
     }
 
-    @Test(dataProvider = "getData") // For every row in the data object array, this test will run once
+    @Test(dataProvider = "getData", dependsOnMethods = {"Test1"}) // For every row in the data object array, this test will run once
     public static void Test2(String dataFirst, String dataSecond) {
         System.out.println("bananas");
         System.out.println(dataFirst);
