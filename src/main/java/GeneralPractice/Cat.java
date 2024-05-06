@@ -1,6 +1,6 @@
 package GeneralPractice;
 
-public class Cat implements IAnimal{
+public class Cat extends Animal implements IAnimal{
 
     @Override
     public void animalSound() {

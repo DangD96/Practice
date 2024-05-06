@@ -5,6 +5,7 @@ public class Main {
         Cat myCat = new Cat();
         myCat.animalBlood();
         myCat.animalSound();
+        myCat.animalClassSound();
 
         // Anonymous inner class so I create a single "extra" object
         // Anonymous inner class can work with interface like below, or class
