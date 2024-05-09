@@ -13,6 +13,9 @@ public class Main {
         String[] test = DIR.split(results[results.length-2]);
         System.out.println(Arrays.toString(test));
 
+        Names n = new Names();
+        System.out.println(n.className);
+
 
 
 
