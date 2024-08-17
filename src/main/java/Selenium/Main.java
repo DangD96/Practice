@@ -27,5 +27,9 @@ public class Main {
         System.out.println(VM.current().addressOf(g.SEARCH_BTN)); // same address
         System.out.println(VM.current().addressOf(g.SEARCH_BTN)); // // same address
         driver.quit();
+
+        GooglePageVersionTwo g2 = new GooglePageVersionTwo(driver);
+        g2.doBtn();
+        g2.searchBtnBy.toString();
     }
 }
