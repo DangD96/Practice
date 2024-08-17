@@ -16,20 +16,23 @@ public class Main {
         // With By
         By googleSearch = By.cssSelector("[value='Google Search']");
         WebElement googleSearchBtn = driver.findElement(googleSearch);
-        System.out.println(VM.current().addressOf(googleSearch)); // same address
+        System.out.println(VM.current().addressOf(googleSearch));
         googleSearchBtn = driver.findElement(googleSearch);
-        System.out.println(VM.current().addressOf(googleSearchBtn)); // different address
+        System.out.println(VM.current().addressOf(googleSearchBtn)); // different address as previous
 
         System.out.println("----------");
 
         // With page factory
         GooglePage g = new GooglePage(driver);
-        System.out.println(VM.current().addressOf(g.SEARCH_BTN)); // same address
-        System.out.println(VM.current().addressOf(g.SEARCH_BTN)); // // same address
-        driver.quit();
+        System.out.println(VM.current().addressOf(g.SEARCH_BTN));
+        System.out.println(VM.current().addressOf(g.SEARCH_BTN)); // same address as previous
 
-        GooglePageVersionTwo g2 = new GooglePageVersionTwo(driver);
-        g2.doBtn();
-        g2.searchBtnBy.toString();
+        System.out.println("----------");
+
+        // With By v2
+        System.out.println(VM.current().addressOf(g.getBtn()));
+        System.out.println(VM.current().addressOf(g.getBtn())); // different address as previous
+
+        driver.quit();
     }
 }
