@@ -16,5 +16,7 @@ public class Main {
             }
         };
         myDog.animalSound();
+
+        System.out.println("System OS: " + System.getProperty("os.name"));
     }
 }
