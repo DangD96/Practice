@@ -2,11 +2,10 @@ package Stream;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class StreamAPI {
     public static void main(String[] args) {
-        ArrayList<String> myAryList = new ArrayList<String>();
+        ArrayList<String> myAryList = new ArrayList<>();
         myAryList.add("Saitama");
         myAryList.add("Fubuki");
         myAryList.add("Genos");
@@ -18,24 +17,15 @@ public class StreamAPI {
         System.out.println();
 
         // Convert every name to uppercase and print them out
-        myAryList.forEach(str -> {
-            System.out.printf("Name: %s\n", str.toUpperCase());
-        });
+        myAryList.forEach(str -> System.out.printf("Name: %s\n", str.toUpperCase()));
         System.out.println();
 
         // Convert every name to uppercase, sort them, and print them out
-        myAryList.stream().sorted().forEach(str -> {
-            System.out.printf("Name: %s\n", str.toUpperCase());
-        });
+        myAryList.stream().sorted().forEach(str -> System.out.printf("Name: %s\n", str.toUpperCase()));
         System.out.println();
 
         // Convert every name to uppercase, sort them, convert back to a list, and print out the 2nd name
-        List<String> myList = myAryList.stream().sorted().map(str -> str.toUpperCase()).collect(Collectors.toList());
+        List<String> myList = myAryList.stream().sorted().map(str -> str.toUpperCase()).toList();
         System.out.printf("2nd Name: %s\n", myList.get(1));
-
-        // Does same thing as above
-        // https://www.geeksforgeeks.org/method-references-in-java-with-examples/
-        List<String> myList2 = myAryList.stream().sorted().map(String::toUpperCase).toList();
-
     }
 }

@@ -20,35 +20,5 @@ public class Main {
         myDog.animalSound();
 
         System.out.println("System OS: " + System.getProperty("os.name"));
-
-        System.out.println("RESULT = " + UsernameField());
     }
-    // V1
-    public static By UsernameField() {
-        enum Platform {
-            Android,
-            iOS,
-        }
-        enum App {
-            Rover,
-            Canto
-        }
-        Platform platform = Platform.Android;
-        App app = App.Rover;
-        switch (platform) {
-            case Android -> {
-                return switch (app) {
-                    case Rover -> By.id("aa");
-                    case Canto -> By.id("ab");
-                };
-            }
-            case iOS -> {
-                return switch (app) {
-                    case Rover -> By.id("ba");
-                    case Canto -> By.id("bb");
-                };
-            }
-        }
-        return null;
-    };
 }
