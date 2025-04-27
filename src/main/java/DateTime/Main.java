@@ -1,4 +1,4 @@
-package GeneralPractice.DateTime;
+package DateTime;
 
 import java.time.Duration;
 import java.time.Instant;

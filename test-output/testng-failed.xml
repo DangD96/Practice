@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Practice(failed)">
     <classes>
-      <class name="UdemyPractice.TestNG.Test.Class1Test">
+      <class name="TestNG.Test.Class1Test">
         <methods>
           <include name="Teardown"/>
           <include name="AfterSuite"/>

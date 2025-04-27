@@ -1,4 +1,4 @@
-package GeneralPractice;
+package Interfaces;
 
 public class Cat extends Animal implements IAnimal{
 

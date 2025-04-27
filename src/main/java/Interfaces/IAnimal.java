@@ -1,4 +1,4 @@
-package GeneralPractice;
+package Interfaces;
 
 public interface IAnimal {
     String bloodColor = "red";

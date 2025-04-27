@@ -9,12 +9,12 @@
             </run>
         </groups>
         <classes>
-            <class name="UdemyPractice.TestNG.Test.Class1Test"/>
+            <class name="TestNG.Test.Class1Test"/>
         </classes>
     </test>
     <test name="DJD Test 2">
         <classes>
-            <class name="UdemyPractice.TestNG.Test.Class2Test"/>
+            <class name="TestNG.Test.Class2Test"/>
         </classes>
     </test>
 </suite>

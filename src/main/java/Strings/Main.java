@@ -1,4 +1,4 @@
-package GeneralPractice.Strings;
+package Strings;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package UdemyPractice.TestNG.Test;
+package TestNG.Test;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
