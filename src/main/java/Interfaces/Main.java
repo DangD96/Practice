@@ -1,7 +1,5 @@
 package Interfaces;
 
-import org.openqa.selenium.By;
-
 public class Main {
     public static void main(String[] args) {
         Cat myCat = new Cat();
