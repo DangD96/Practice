@@ -6,11 +6,11 @@ import java.util.function.Supplier;
 public class RepeatSupplierUntilConditionMet {
     public static void main(String[] args) {
         System.out.println("V1: Repeat until condition met");
-        repeatUntilV1(() -> mySupplier(), Conditions.LessThan30());
+        repeatUntil(() -> mySupplier(), Conditions.LessThan30());
 
         System.out.println("\nV2: Repeat until condition met");
         Predicate<Integer> inputLessThan30 = x -> x < 30;
-        repeatUntilV2(() -> mySupplier(), inputLessThan30);
+        repeatUntil(() -> mySupplier(), inputLessThan30);
 
         System.out.println("\nV3: Explicit Repeat");
         repeatUntilLowerThan30(() -> mySupplier());
@@ -23,19 +23,7 @@ public class RepeatSupplierUntilConditionMet {
         return randInt;
     }
 
-    public static <T> void repeatUntilV1(Supplier<T> supplier, Predicate<T> condition) {
-        final int MAX_RETRIES = 10;
-        for (int i = 0; i < MAX_RETRIES; i++) {
-            T value = supplier.get();
-            boolean result = condition.test(value);
-            if (result) {
-                System.out.println("CONDITION MET!");
-                break;
-            }
-        }
-    }
-
-    public static <T> void repeatUntilV2(Supplier<T> supplier, Predicate<T> condition) {
+    public static <T> void repeatUntil(Supplier<T> supplier, Predicate<T> condition) {
         final int MAX_RETRIES = 10;
         for (int i = 0; i < MAX_RETRIES; i++) {
             T value = supplier.get();
@@ -68,5 +56,3 @@ public class RepeatSupplierUntilConditionMet {
         }
     }
 }
-
-
